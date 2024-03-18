@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кластеризатор негативных тем</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Шапка с данными авторизованного пользователя -->
+    <header class="bg-dark text-white p-4">
+        <div class="d-flex justify-content-end align-items-center">
+            <div class="mr-auto">
+                <!-- Здесь могут быть имя и фамилия авторизованного пользователя -->
+                <span>Добро пожаловать, Иван Иванов!</span>
+            </div>
+            <img src="avatar.jpg" alt="Avatar" class="rounded-circle" style="width: 50px; height: 50px;">
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- Левая половина -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Выгрузка данных</h5>
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- Форма для заполнения данных от VK -->
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="vkToken">VK Token</label>
+                                            <input type="text" class="form-control" id="vkToken" placeholder="Введите VK Token">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Правая половина -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Обработка данных</h5>
+                        <p class="card-text">В разработке...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение Bootstrap JS (необходим для работы некоторых компонентов) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
