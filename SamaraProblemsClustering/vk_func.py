@@ -73,7 +73,7 @@ def get_comments(vk_token, dataframe, post, time_delta, v, from_threads=False, c
     return dataframe
 
 
-def get_posts(vk_token, dataframe, groups, time_delta=31, v=5.131):
+def get_posts(vk_token, dataframe, groups, time_delta=31, v=5.131) -> pd.DataFrame:
     wall_url = 'https://api.vk.com/method/wall.get'
 
     for group in groups:
